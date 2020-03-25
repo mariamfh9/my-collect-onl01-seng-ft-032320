@@ -1,4 +1,4 @@
-list = ["Tim Jones", "Bob Costas", "Don Knotts"]
+arr = ["Tim Jones", "Bob Costas", "Don Knotts"]
 
 
 def my_collect(array)
@@ -11,5 +11,5 @@ name_collection << yield(array[i])
   name_collection
 end
 
-my_collect(list) {|i| i.split(" ").first}
+my_collect(arr) {|i| i.split(" ").first}
 
